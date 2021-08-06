@@ -9,6 +9,6 @@
     margin-top: 1rem;
 }
 .loader{
-    position: relative;
-    top: 15rem;
+    position: relative !important;
+    top: 15rem !important;
 }

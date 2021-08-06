@@ -1,4 +1,5 @@
 import React, { useState, useEffect } from "react";
+import SkipNextIcon from '@material-ui/icons/SkipNext';
 import "./Lists.css";
 
 import Loader from "react-loader-spinner";
@@ -80,9 +81,9 @@ const Lists = () => {
           </TableContainer>
           <div className="actions">
             <Button
-              onClick={() => history.push("/graph")}
+              onClick={() => history.push("/chart")}
               style={{ marginRight: "1rem", fontSize: "20px" }}
-              variant="contained"
+              variant="outlined"
               color="primary"
             >
               Next Page
