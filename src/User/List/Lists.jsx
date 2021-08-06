@@ -1,5 +1,4 @@
 import React, { useState, useEffect } from "react";
-import SkipNextIcon from "@material-ui/icons/SkipNext";
 import "./Lists.css";
 
 import Loader from "react-loader-spinner";
