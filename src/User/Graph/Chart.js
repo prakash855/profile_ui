@@ -4,6 +4,7 @@ import { Pie } from "react-chartjs-2";
 import { withRouter } from "react-router-dom";
 import Loader from "react-loader-spinner";
 import dummyAPI from "./Graph.json";
+import './Chart.css'
 
 class Chart extends Component {
   constructor(props) {
@@ -34,7 +35,7 @@ class Chart extends Component {
     return (
       <div>
         {this.state.isLoaded ? (
-          <div style={{padding:"0 20rem"}}>
+          <div className="chart">
             <Pie
               data={this.state.chartData}
               style={{ width: "50rem !imporatnt" }}
@@ -54,6 +55,16 @@ class Chart extends Component {
           <div>
             <Loader type="Puff" className="loader" />
             <p>Please Wait...</p>
+            <div className="actions">
+              <Button
+                onClick={() => this.props.history.push("/")}
+                style={{ fontSize: "20px",position:"relative",bottom:"-33rem" }}
+                variant="outlined"
+                color="primary"
+              >
+                Previous Page
+              </Button>
+            </div>
           </div>
         )}
       </div>

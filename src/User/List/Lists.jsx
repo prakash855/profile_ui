@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from "react";
-import SkipNextIcon from '@material-ui/icons/SkipNext';
+import SkipNextIcon from "@material-ui/icons/SkipNext";
 import "./Lists.css";
 
 import Loader from "react-loader-spinner";
@@ -92,8 +92,18 @@ const Lists = () => {
         </div>
       ) : (
         <div>
-            <Loader type="Circles" className="loader" color="red" />
-            <p>Please Wait...</p>
+          <Loader type="Circles" className="loader" color="red" />
+          <p>Please Wait...</p>
+          <div className="actions">
+            <Button
+              onClick={() => history.push("/chart")}
+              style={{ fontSize: "20px",position:"relative",bottom:"-29.5rem" }}
+              variant="outlined"
+              color="primary"
+            >
+              Next Page
+            </Button>
+          </div>
         </div>
       )}
     </>
