@@ -91,7 +91,7 @@ const Lists = () => {
         </div>
       ) : (
         <div>
-            <Loader type="Puff" className="loader" color="red" />
+            <Loader type="Circles" className="loader" color="red" />
             <p>Please Wait...</p>
         </div>
       )}
