@@ -1,0 +1,14 @@
+.MuiTableCell-head {
+    color: white !important;
+    font-weight: 700 !important;
+}
+.actions{
+    display: flex;
+    justify-content: center;
+    padding: 1rem;
+    margin-top: 1rem;
+}
+.loader{
+    position: relative;
+    top: 15rem;
+}
